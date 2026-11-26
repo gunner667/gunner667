@@ -12,9 +12,5 @@
 </p>
 
 <p align="center">
-  <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=gunner667&bg_color=0b0d24&color=e2e8f0&title_color=c4b5fd&line=a78bfa&point=7dd3fc&area=true&area_color=a78bfa&hide_border=true&radius=10" alt="Contribution graph" />
-</p>
-
-<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b0d24,50:1c1240,100:2b1a5a&height=110&section=footer" width="100%" alt="" />
 </p>
