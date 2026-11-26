@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Welcome to gunner667's GitHub">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#05070a"/>
+      <stop offset=".65" stop-color="#0d1218"/>
+      <stop offset="1" stop-color="#161c24"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdeaa8"/>
+      <stop offset=".5" stop-color="#d6ab3c"/>
+      <stop offset="1" stop-color="#8e6915"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f6f8"/>
+      <stop offset=".45" stop-color="#a3aab3"/>
+      <stop offset=".55" stop-color="#dde1e5"/>
+      <stop offset="1" stop-color="#565c63"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d3d8de"/>
+      <stop offset=".6" stop-color="#8a929b"/>
+      <stop offset="1" stop-color="#4c5259"/>
+    </linearGradient>
+    <radialGradient id="disc" cx=".5" cy=".4" r=".6">
+      <stop offset="0" stop-color="#2a3039"/>
+      <stop offset="1" stop-color="#11151a"/>
+    </radialGradient>
+    <radialGradient id="aura">
+      <stop offset="0" stop-color="#d6ab3c" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#d6ab3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moonGlow">
+      <stop offset="0" stop-color="#ece6d3" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#ece6d3" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d6ab3c" stop-opacity="0"/>
+      <stop offset="1" stop-color="#d6ab3c" stop-opacity=".9"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="16"/></filter>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="shadow" x="-10%" y="-30%" width="120%" height="160%"><feGaussianBlur stdDeviation="4"/></filter>
+    <path id="pine" d="M0 0 L-9 20 L-4 20 L-13 38 L-6 38 L-17 58 L17 58 L6 38 L13 38 L4 20 L9 20 Z M-2 58 h4 v8 h-4 Z"/>
+  </defs>
+
+  <style>
+    text { font-family: Georgia, 'Times New Roman', serif; }
+    .fogA { animation: drift 26s ease-in-out infinite alternate; }
+    .fogB { animation: drift 34s ease-in-out infinite alternate-reverse; }
+    @keyframes drift { from { transform: translateX(-160px); } to { transform: translateX(160px); } }
+    .medallion { transform-origin: 200px 160px; animation: shake 7s ease-in-out infinite; }
+    @keyframes shake {
+      0%, 84%, 100% { transform: translate(0, 0) rotate(0deg); }
+      86% { transform: translate(-1.6px, .6px) rotate(-1.4deg); }
+      88% { transform: translate(1.6px, -.6px) rotate(1.4deg); }
+      90% { transform: translate(-1.2px, .4px) rotate(-1deg); }
+      92% { transform: translate(1.2px, -.4px) rotate(1deg); }
+      94% { transform: translate(-.6px, 0) rotate(-.4deg); }
+    }
+    .eye { animation: pulse 3.2s ease-in-out infinite; }
+    @keyframes pulse { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+    .aura { animation: breathe 7s ease-in-out infinite; transform-origin: 200px 160px; }
+    @keyframes breathe { 0%, 100% { opacity: .6; transform: scale(1); } 50% { opacity: 1; transform: scale(1.08); } }
+    .ember { opacity: 0; animation-name: rise; animation-timing-function: linear; animation-iteration-count: infinite; }
+    @keyframes rise {
+      0% { transform: translate(0, 0); opacity: 0; }
+      12% { opacity: .95; }
+      100% { transform: translate(28px, -240px); opacity: 0; }
+    }
+    .in1 { animation: fadeUp 1.4s ease-out both; }
+    .in2 { animation: fadeUp 1.4s .35s ease-out both; }
+    .in3 { animation: fadeUp 1.4s .7s ease-out both; }
+    .in4 { animation: fadeUp 1.4s 1.05s ease-out both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+
+  <!-- night sky -->
+  <rect width="1200" height="320" fill="url(#sky)"/>
+  <g fill="#cfd6df">
+    <circle cx="420" cy="38" r="1"/><circle cx="560" cy="22" r=".8"/><circle cx="690" cy="54" r="1.1"/>
+    <circle cx="820" cy="30" r=".7"/><circle cx="930" cy="76" r="1"/><circle cx="980" cy="20" r=".8"/>
+    <circle cx="1160" cy="120" r=".9"/><circle cx="360" cy="90" r=".7"/><circle cx="1010" cy="140" r=".6"/>
+    <circle cx="80" cy="30" r=".8"/><circle cx="310" cy="24" r=".6"/><circle cx="760" cy="96" r=".6"/>
+  </g>
+
+  <!-- moon -->
+  <circle cx="1090" cy="66" r="90" fill="url(#moonGlow)"/>
+  <circle cx="1090" cy="66" r="26" fill="#e8e2cf" opacity=".92"/>
+  <circle cx="1081" cy="60" r="5" fill="#cfc8b2" opacity=".6"/>
+  <circle cx="1099" cy="75" r="3.5" fill="#cfc8b2" opacity=".5"/>
+
+  <!-- distant mountains -->
+  <polygon fill="#121820" points="0,320 0,238 70,212 140,232 220,186 300,222 370,198 460,232 550,204 630,236 720,206 810,240 900,212 990,236 1070,198 1140,222 1200,206 1200,320"/>
+  <g fill="#0c1016">
+    <use href="#pine" transform="translate(40 236) scale(.7)"/>
+    <use href="#pine" transform="translate(64 244) scale(.55)"/>
+    <use href="#pine" transform="translate(1110 232) scale(.7)"/>
+    <use href="#pine" transform="translate(1136 242) scale(.5)"/>
+    <use href="#pine" transform="translate(1166 236) scale(.62)"/>
+  </g>
+
+  <!-- fog -->
+  <g class="fogA"><ellipse cx="380" cy="246" rx="420" ry="26" fill="#8f9ba8" opacity=".09" filter="url(#blur)"/></g>
+  <g class="fogB"><ellipse cx="880" cy="214" rx="380" ry="22" fill="#8f9ba8" opacity=".07" filter="url(#blur)"/></g>
+
+  <!-- near ridge -->
+  <polygon fill="#080b0f" points="0,320 0,282 100,264 190,286 280,260 370,288 470,270 560,292 660,272 760,290 860,266 960,288 1060,272 1140,288 1200,278 1200,320"/>
+  <g fill="#06080b">
+    <use href="#pine" transform="translate(16 254) scale(.85)"/>
+    <use href="#pine" transform="translate(300 248) scale(.6)"/>
+    <use href="#pine" transform="translate(930 262) scale(.55)"/>
+    <use href="#pine" transform="translate(1180 246) scale(.9)"/>
+  </g>
+
+  <!-- embers (Igni) -->
+  <g fill="#ff9a3c" filter="url(#glow)">
+    <circle class="ember" cx="90"   cy="312" r="1.8" style="animation-duration:7s;animation-delay:0s"/>
+    <circle class="ember" cx="170"  cy="318" r="1.4" style="animation-duration:9s;animation-delay:2.2s"/>
+    <circle class="ember" cx="260"  cy="310" r="2"   style="animation-duration:8s;animation-delay:4.1s"/>
+    <circle class="ember" cx="350"  cy="316" r="1.3" style="animation-duration:10s;animation-delay:1.3s"/>
+    <circle class="ember" cx="440"  cy="312" r="1.7" style="animation-duration:7.5s;animation-delay:5.2s"/>
+    <circle class="ember" cx="530"  cy="318" r="1.2" style="animation-duration:9.5s;animation-delay:3s"/>
+    <circle class="ember" cx="620"  cy="310" r="1.9" style="animation-duration:8.5s;animation-delay:.7s"/>
+    <circle class="ember" cx="710"  cy="316" r="1.4" style="animation-duration:11s;animation-delay:6s"/>
+    <circle class="ember" cx="800"  cy="312" r="1.6" style="animation-duration:7.8s;animation-delay:2.8s"/>
+    <circle class="ember" cx="890"  cy="318" r="1.2" style="animation-duration:9.2s;animation-delay:4.6s"/>
+    <circle class="ember" cx="980"  cy="310" r="2"   style="animation-duration:8.2s;animation-delay:1.8s"/>
+    <circle class="ember" cx="1060" cy="316" r="1.5" style="animation-duration:10.5s;animation-delay:3.7s"/>
+    <circle class="ember" cx="1140" cy="312" r="1.7" style="animation-duration:7.2s;animation-delay:5.8s"/>
+  </g>
+
+  <!-- wolf medallion -->
+  <circle class="aura" cx="200" cy="160" r="150" fill="url(#aura)"/>
+  <g class="medallion">
+    <!-- chain -->
+    <g fill="none" stroke="url(#silver)" stroke-width="3">
+      <ellipse cx="200" cy="50" rx="7" ry="10"/>
+      <ellipse cx="200" cy="32" rx="3" ry="10"/>
+      <ellipse cx="200" cy="14" rx="7" ry="10"/>
+      <ellipse cx="200" cy="-4" rx="3" ry="10"/>
+    </g>
+    <g transform="translate(200 160)">
+      <circle r="102" fill="url(#disc)" stroke="url(#silver)" stroke-width="7"/>
+      <circle r="90" fill="none" stroke="#6f7780" stroke-width="1.4"/>
+      <circle r="95.5" fill="none" stroke="#9aa2ab" stroke-width="1.2" stroke-dasharray="2 7"/>
+      <g transform="translate(0 -3)">
+        <!-- head -->
+        <path fill="url(#steel)" stroke="#eef1f4" stroke-width="1.6" stroke-linejoin="round"
+              d="M-48 -72 L-20 -40 L0 -48 L20 -40 L48 -72 L50 -22 L64 8 L42 16 L54 40 L24 42 L12 70 L0 80 L-12 70 L-24 42 L-54 40 L-42 16 L-64 8 L-50 -22 Z"/>
+        <!-- inner ears -->
+        <path fill="#2b3036" d="M-42 -60 L-24 -38 L-40 -28 Z M42 -60 L24 -38 L40 -28 Z"/>
+        <!-- carved details -->
+        <g fill="none" stroke="#2b3036" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 -44 L0 -18"/>
+          <path d="M-40 -18 L-10 -7 M40 -18 L10 -7"/>
+          <path d="M-10 2 L-6 46 M10 2 L6 46"/>
+          <path d="M-52 8 L-30 20 M52 8 L30 20"/>
+          <path d="M-44 36 L-24 32 M44 36 L24 32"/>
+          <path d="M-14 63 L0 73 L14 63"/>
+        </g>
+        <!-- nose -->
+        <path fill="#1d2126" d="M-10 49 L10 49 L0 60 Z"/>
+        <!-- fangs -->
+        <path fill="#f4f6f8" d="M-11 64 L-6 64 L-8.5 71 Z M11 64 L6 64 L8.5 71 Z"/>
+        <!-- glowing eyes -->
+        <g class="eye" fill="#ffcf3d" filter="url(#glow)">
+          <path d="M-35 -6 L-12 2 L-29 7 Z"/>
+          <path d="M35 -6 L12 2 L29 7 Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- title -->
+  <g text-anchor="middle">
+    <text class="in1" x="735" y="106" font-size="19" letter-spacing="10" fill="#a9b1ba">WELCOME TO</text>
+    <text x="737" y="175" font-size="54" font-weight="bold" letter-spacing="4" fill="#000" opacity=".7" filter="url(#shadow)">GUNNER667'S GITHUB</text>
+    <text class="in2" x="735" y="172" font-size="54" font-weight="bold" letter-spacing="4" fill="url(#gold)">GUNNER667'S GITHUB</text>
+    <g class="in3">
+      <rect x="505" y="199" width="200" height="1.6" fill="url(#rule)"/>
+      <rect x="765" y="199" width="200" height="1.6" fill="url(#rule)" transform="rotate(180 865 199.8)"/>
+      <rect x="727" y="192" width="14" height="14" fill="none" stroke="#d6ab3c" stroke-width="1.6" transform="rotate(45 734 199)"/>
+      <circle cx="734" cy="199" r="2.4" fill="#d6ab3c"/>
+    </g>
+    <text class="in4" x="735" y="242" font-size="24" font-style="italic" letter-spacing="3" fill="#d3d8de">Frontend Developer</text>
+  </g>
+</svg>
